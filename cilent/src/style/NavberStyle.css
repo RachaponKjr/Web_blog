@@ -4,11 +4,12 @@
 }
 
 .contenner{
-
+    position: absolute;
     width: 100%;
     max-width: 100%;
     height: 4rem;
     padding: 0 8rem;
+    
 }
 .main-navber{
 
@@ -39,14 +40,85 @@ color: #444444;
 }
 .search{
     display: flex;
-    width: auto;
+    width: 10rem;
     height: auto;
+    position: relative;
 }
 .icon{
     width: 1.5rem;
     height: 1.5rem;
     color: var(--color);
+    cursor: pointer;
 }
 .icon:hover{
     color: #444444;
+}
+.hidden{
+    /* display: none; */
+    top: 6px;
+    left: 2.5rem;
+    width: 10rem;
+    height: 2rem;
+}
+.manu-list{
+    display: flex;
+    justify-content: end;
+    width: 10rem;
+    position: relative;
+}
+.border-line{
+    border: none ;
+    padding: 0 0.2rem;
+    outline: none;
+    border-bottom: 2px solid rgb(191, 0, 255) ;
+}
+
+
+/* MANU AT */
+.manu-at{
+    width: 13rem;
+    height: 100vh;
+    background-color: rgb(53, 53, 53);
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.boder{
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    transition: 0.2s;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.boder:hover{
+    background-color: white;
+    color: #444444;
+
+
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    text-transform: uppercase;
+    color: white;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    text-transform: uppercase;
+    color: white;
+}
+.body-manu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.haderlogin{
+    color: whitesmoke;
 }
